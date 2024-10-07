@@ -2,26 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.btn {
+    @apply rounded font-semibold transition-all duration-300 ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.btn-icon {
+    @apply w-8 h-8 flex items-center justify-center p-2 rounded-full border border-gray-200;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.btn-primary {
+    @apply from-primary bg-gradient-to-br to-secondary hover:bg-primary-dark text-light;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.btn-outline-primary {
+    @apply border border-secondary text-secondary bg-light;
+}
+
+.btn-secondary {
+    @apply from-secondary bg-gradient-to-br to-secondary-dark hover:bg-secondary-dark text-light;
+}
+
+.badge-container {
+    @apply flex flex-wrap gap-2;
+}
+
+.badge {
+    @apply rounded-3xl bg-secondary-light text-secondary-dark font-semibold text-xs py-1 px-3;
 }
