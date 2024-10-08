@@ -69,7 +69,6 @@
     position: relative;
     flex: 0 0 15rem;
     min-width: 0;
-    height: var(--slide-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,13 +87,9 @@
     text-indent: -9999em;
     animation: loading 1.1s infinite linear;
     border-radius: 50%;
-    width: 5rem;
-    height: 5rem;
   }
   .embla-infinite-scroll__spinner:after {
     border-radius: inherit;
-    width: 5rem;
-    height: 5rem;
   }
   .embla-infinite-scroll--loading-more > .embla-infinite-scroll__spinner {
     display: inline-flex;

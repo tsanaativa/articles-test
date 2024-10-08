@@ -177,10 +177,10 @@ const EmblaCarousel: FC<Props> = ({ data, options }: Props) => {
           {hasMoreToLoad && (
             <div
               className={"embla-infinite-scroll".concat(
-                loadingMore ? " embla-infinite-scroll--loading-more" : ""
+                loadingMore ? " embla-infinite-scroll--loading-more max-h-[220px] sm:max-h-[280px] md:max-h-[360px]" : ""
               )}
             >
-              <span className="embla-infinite-scroll__spinner" />
+              <span className="embla-infinite-scroll__spinner w-16 h-16 md:w-20 md:h-20" />
             </div>
           )}
         </div>
